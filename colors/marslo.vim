@@ -42,6 +42,14 @@
 "               MatchParen      guibg ctermbg gui cterm term
 "               LineNr          guifg guibg ctermfg ctermbg
 "               CursorLineNr    guifg guibg gui ctermbg ctermfg
+" v1.5: Modified at 07/11/13 17:52:47
+"       Author: Marslo
+"       Email: marslo.jiao@gmail.com
+"       File Name: marslo.vim
+"       Added:
+"               MBEVisibleActive    guifg guibg
+"               MBEVisibleNormal    guifg guibg
+"
 
 
 " cool help screens
@@ -110,6 +118,10 @@ hi PmenuSbar    guifg=black guibg=gray14
 "hi Menu
 "hi Scrollbar
 "hi Tooltip
+
+" MiniBufExpl Colors
+hi MBEVisibleActive guifg=#5DC2D6 guibg=#333333
+hi MBEVisibleNormal guifg=#A6DB29 guibg=#333333
 
 " Inspired from http://stackoverflow.com/questions/10746750/set-vim-bracket-highlighting-colors
 " Color for :set showmatch
@@ -243,6 +255,5 @@ hi Underlined	cterm=underline ctermfg=5 gui=NONE
 hi Ignore	cterm=NONE ctermfg=7
 hi Ignore	ctermfg=darkgrey
 hi Error	cterm=NONE ctermfg=7 ctermbg=1
-
 
 "vim: sw=4
