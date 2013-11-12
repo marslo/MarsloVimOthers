@@ -55,8 +55,6 @@
 "       File Name: marslo16.vim
 "       Modified:
 "               Change name from marslo.vim to marslo16.vim
-"
-
 
 " cool help screens
 " :he group-name
@@ -256,7 +254,6 @@ hi DiffAdd	ctermbg=4
 hi DiffChange	ctermbg=2
 hi DiffDelete	cterm=NONE ctermfg=4 ctermbg=6
 hi DiffText	cterm=NONE ctermbg=1
-
 
 hi Underlined	cterm=underline ctermfg=5 gui=NONE
 hi Ignore	cterm=NONE ctermfg=7

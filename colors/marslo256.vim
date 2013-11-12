@@ -60,6 +60,12 @@
 "               Identifier          cterm
 "               Visual              ctermfg
 "               Change name from marslo.vim to marslo256.vim
+" v.1.7: Modified at 12/11/13 15:58:50
+"       Author: Marslo
+"       Email: marslo.jiao@gmail.com
+"       File Name: marslo256.vim
+"       Modify:
+"               Update the format
 
 " cool help screens
 " :he group-name
@@ -87,20 +93,20 @@ hi Normal	            guifg=#DDDDDD       guibg=#181818
 hi Cursor	            guibg=#A6E22E       guifg=slategrey     gui=underline
 " Color for :set cursorline (Highlight the line number only)
 " hi LineNr               guifg=#666666 guibg=background
-" hi CursorLine           guibg=darkgrey guifg=white
-" hi CursorLineNr         gui=bold guifg=Yellow
 hi LineNr               guifg=#555555       guibg=background
+" hi CursorLine           guibg=darkgrey guifg=white
 hi CursorLine           guibg=background
+" hi CursorLineNr         gui=bold guifg=Yellow
 hi CursorLineNr         guifg=#A6E22E       guibg=background    gui=NONE
-hi VertSplit	        guibg=#c2bfa5       guifg=grey50        gui=none
 " hi Folded	            guibg=grey15        guifg=gold
 hi Folded	            guibg=grey15        guifg=grey60
 hi FoldColumn	        guibg=grey15        guifg=tan
+" hi NonText	        guifg=LightBlue     guibg=gray30
+hi NonText	            guifg=LightBlue     guibg=#181818
+hi VertSplit	        guibg=#c2bfa5       guifg=grey50        gui=none
 hi IncSearch	        guifg=slategrey     guibg=khaki
 hi ModeMsg	            guifg=goldenrod
 hi MoreMsg	            guifg=SeaGreen
-" hi NonText	        guifg=LightBlue     guibg=gray30
-hi NonText	            guifg=LightBlue     guibg=#181818
 hi Question	            guifg=springgreen
 hi Search	            guibg=peru          guifg=wheat
 hi SpecialKey	        guifg=yellowgreen
@@ -111,7 +117,7 @@ hi StatusLineNC	        guibg=gray18        guifg=grey50        gui=none
 
 " hi Title	            guifg=indianred
 hi Title	            guifg=gray28
-hi Visual	            gui=none            guifg=khaki         guibg=olivedrab
+hi Visual	            guifg=khaki         guibg=olivedrab     gui=none
 
 "hi VisualNOS
 hi WarningMsg	        guifg=salmon
@@ -123,7 +129,7 @@ hi PmenuSbar            guifg=black         guibg=gray14
 
 """" Function name(shell) [python: print]
 " hi Identifier	        guifg=#0662f9
-hi Identifier	        guifg=#4169E1
+hi Identifier	        guifg=#4169E1       gui=NONE
 
 hi Ignore	            guifg=grey40
 hi Todo		            guifg=orangered     guibg=yellow2
@@ -138,38 +144,41 @@ hi MBEVisibleNormal     guifg=#A6DB29       guibg=#333333
 hi MatchParen           gui=inverse
 
 " NERDTree
-hi Directory      guifg=#87afdf
-hi treeCWD        guifg=#dfaf87
-hi treeClosable   guifg=#df8787
-hi treeOpenable   guifg=#afdf87
-hi treePart       guifg=#808080
-hi treeDirSlash   guifg=#808080
-hi treeLink       guifg=#dfafdf
+hi Directory            guifg=#87afdf
+hi treeCWD              guifg=#dfaf87
+hi treeClosable         guifg=#df8787
+hi treeOpenable         guifg=#afdf87
+hi treePart             guifg=#808080
+hi treeDirSlash         guifg=#808080
+hi treeLink             guifg=#dfafdf
 
 
 " syntax highlighting groups
 " ===========================================================
 """" Comments
-hi Comment	            guifg=#484848
+hi Comment	            guifg=#484848       gui=NONE
 """" <CR>, <leader>
 " hi Special	            guifg=#B0F080
 " hi Special	            guifg=#c63c26
 " hi Special	            guifg=#faa755
-hi Special	            guifg=#fdb933
+hi Special	            guifg=#fdb933       gui=NONE
 """" Strings
 " hi Constant	            guifg=#7EBE4E
 " hi Constant	            guifg=#EE801E
-hi Constant	            guifg=#A6E22E
+hi Constant	            guifg=#A6E22E       gui=NONE
 """" Key words (while, if, else, for, in)
 " hi Statement	        guifg=#f47920
 " hi Statement	        guifg=#8fe28f
 " hi Statement	        guifg=#FFC864
-hi Statement	        guifg=#EE801E
+hi Statement	        guifg=#EE801E       gui=NONE
 """" #! color
-hi PreProc	            guifg=OrangeRed3
+hi PreProc	            guifg=OrangeRed3    gui=NONE
 """" classname, <key>, <Groupname> color
-hi Type		            guifg=#FF801E
+hi Type		            guifg=#FF801E       gui=NONE
+hi Underlined	        gui=NONE
 
+hi htmlArg              guifg=#dfafdf
+hi htmlValue            guifg=#dfdfaf
 
 " hi Identifier	        guifg=palegreen = #98FB98
 " hi Comment	        guifg=SkyBlue
@@ -177,7 +186,6 @@ hi Type		            guifg=#FF801E
 " hi Statement	        guifg=khaki
 " hi PreProc	        guifg=indianred
 " hi Type		        guifg=darkkhaki
-" hi Underlined
 " hi Error
 " hi CursorIM
 " hi Directory
@@ -215,13 +223,13 @@ hi Type		            guifg=#FF801E
 hi SpecialKey	        ctermfg=darkgreen
 hi NonText	            cterm=NONE          ctermfg=darkblue
 hi Directory	        ctermfg=red
-hi ErrorMsg	            cterm=NONE          ctermfg=red ctermbg=0
-hi IncSearch	        cterm=NONE          ctermfg=yellow ctermbg=green
-hi Search	            cterm=NONE          ctermfg=grey ctermbg=blue
+hi ErrorMsg	            cterm=NONE          ctermfg=red         ctermbg=0
+hi IncSearch	        cterm=NONE          ctermfg=yellow      ctermbg=green
+hi Search	            cterm=NONE          ctermfg=grey        ctermbg=blue
 hi MoreMsg	            ctermfg=darkgreen
 hi ModeMsg	            cterm=NONE          ctermfg=brown
 hi Question	            ctermfg=green
-hi StatusLine	        cterm=NONE          ctermfg=darkgray ctermbg=black
+hi StatusLine	        cterm=NONE          ctermfg=darkgray    ctermbg=black
 hi StatusLineNC         cterm=NONE
 hi VertSplit	        cterm=NONE
 hi Title	            ctermfg=5
@@ -240,7 +248,7 @@ hi DiffText	            cterm=NONE          ctermbg=1
 " The color setting for complete opt
 hi Pmenu                ctermbg=darkred
 hi PmenuSel             ctermfg=lightgreen
-" hi Identifier	        ctermfg=LightGreen  gui=NONE
+" hi Identifier	        ctermfg=LightGreen
 hi Identifier	        ctermfg=149         gui=NONE
 hi Cursor               cterm=underline     term=underline
 " hi MatchParen           ctermbg=Green
@@ -249,27 +257,27 @@ hi LineNr               ctermfg=darkgrey    ctermbg=none
 hi CursorLine           cterm=NONE          ctermbg=darkgrey    ctermfg=white
 hi CursorLineNr         ctermbg=black       ctermfg=82          term=bold
 
-hi Comment	            ctermfg=darkgrey    gui=NONE
+hi Comment	            ctermfg=darkgrey
 """" Strings
 " hi Constant	            ctermfg=brown gui=NONE
 " hi Constant	            ctermfg=darkred gui=NONE
-hi Constant	            ctermfg=green       gui=NONE
+hi Constant	            ctermfg=green
 """" Key words (while, if, else, for, in)
-hi Statement	        ctermfg=red         gui=NONE
+hi Statement	        ctermfg=red
 """" #! color
-hi PreProc	            ctermfg=red         gui=NONE
+hi PreProc	            ctermfg=red
 """" classname, <key>, <Groupname> color
-hi Type		            ctermfg=yellow      gui=NONE
-hi Special	            ctermfg=yellow      gui=NONE
+hi Type		            ctermfg=yellow
+hi Special	            ctermfg=yellow
 
-hi Underlined	        cterm=underline     ctermfg=5       gui=NONE
+hi Underlined	        cterm=underline     ctermfg=5
 hi Ignore	            cterm=NONE          ctermfg=7       ctermfg=darkgrey
 hi Error	            cterm=NONE          ctermfg=7       ctermbg=1
 
 hi htmlTag              ctermfg=244
 hi htmlEndTag           ctermfg=244
-hi htmlArg              ctermfg=119         guifg=#dfafdf
-hi htmlValue            ctermfg=187         guifg=#dfdfaf
+hi htmlArg              ctermfg=119
+hi htmlValue            ctermfg=187
 hi htmlTitle            ctermfg=254         ctermbg=95
 hi htmlArg              ctermfg=203
 hi htmlTagName          ctermfg=69
@@ -277,15 +285,12 @@ hi htmlString           ctermfg=104
 
 
 " NERDTree
-hi Directory      ctermfg=110
-hi treeCWD        ctermfg=180
-hi treeClosable   ctermfg=174
-hi treeOpenable   ctermfg=150
-hi treePart       ctermfg=244
-hi treeDirSlash   ctermfg=244
-hi treeLink       ctermfg=182
-
-
-
+hi Directory            ctermfg=110
+hi treeCWD              ctermfg=180
+hi treeClosable         ctermfg=174
+hi treeOpenable         ctermfg=150
+hi treePart             ctermfg=244
+hi treeDirSlash         ctermfg=244
+hi treeLink             ctermfg=182
 
 "vim: sw=4
