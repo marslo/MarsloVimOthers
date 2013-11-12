@@ -257,24 +257,4 @@ hi Ignore	cterm=NONE ctermfg=7
 hi Ignore	ctermfg=darkgrey
 hi Error	cterm=NONE ctermfg=7 ctermbg=1
 
-hi htmlTag      ctermfg=244
-hi htmlEndTag   ctermfg=244
-hi htmlArg              ctermfg=119 guifg=#dfafdf
-hi htmlValue  ctermfg=187  guifg=#dfdfaf
-hi htmlTitle  ctermfg=254  ctermbg=95
-" hi htmlArg  ctermfg=146
-" hi htmlTagName  ctermfg=146
-hi htmlString ctermfg=187
-
-
-
-" NERDTree
-hi Directory      ctermfg=110  guifg=#87afdf
-hi treeCWD        ctermfg=180  guifg=#dfaf87
-hi treeClosable   ctermfg=174  guifg=#df8787
-hi treeOpenable   ctermfg=150  guifg=#afdf87
-hi treePart       ctermfg=244  guifg=#808080
-hi treeDirSlash   ctermfg=244  guifg=#808080
-hi treeLink       ctermfg=182  guifg=#dfafdf
-
 "vim: sw=4
