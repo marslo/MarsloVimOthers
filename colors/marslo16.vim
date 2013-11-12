@@ -49,6 +49,12 @@
 "       Added:
 "               MBEVisibleActive    guifg guibg
 "               MBEVisibleNormal    guifg guibg
+" V1.6: Modified at 12/11/13 14:20:13
+"       Author: Marslo
+"       Email: marslo.jiao@gmail.com
+"       File Name: marslo16.vim
+"       Modified:
+"               Change name from marslo.vim to marslo16.vim
 "
 
 
@@ -67,7 +73,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="marslo"
+let g:colors_name="marslo16"
 
 " hi Normal	guifg=#DDDDDD guibg=gray20
 " hi Normal	guifg=#DDDDDD guibg=gray10

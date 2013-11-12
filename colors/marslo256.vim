@@ -49,6 +49,17 @@
 "       Added:
 "               MBEVisibleActive    guifg guibg
 "               MBEVisibleNormal    guifg guibg
+" v1.6: Modified at 12/11/13 14:08:10
+"       Author: Marslo
+"       Email: marslo.jiao@gmail.com
+"       File Name: marslo265.vim
+"       Add: 
+"               HTML tags
+"               NERDTree
+"       Modifiy:
+"               Identifier          cterm
+"               Visual              ctermfg
+"               Change name from marslo.vim to marslo256.vim
 "
 
 
@@ -67,7 +78,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="marslo"
+let g:colors_name="marslo256"
 
 " hi Normal	guifg=#DDDDDD guibg=gray20
 " hi Normal	guifg=#DDDDDD guibg=gray10
@@ -189,8 +200,8 @@ hi Special	ctermfg=yellow gui=NONE
 " blue
 hi Identifier	guifg=#4169E1
 " hi Identifier	guifg=#0662f9
+hi Identifier	ctermfg=149 gui=NONE
 " hi Identifier	ctermfg=LightGreen gui=NONE
-hi Identifier	ctermfg=Yellow gui=NONE
 
 " hi Comment	guifg=SkyBlue
 " hi Constant	guifg=#ffa0a0
@@ -239,7 +250,7 @@ hi StatusLine	cterm=NONE ctermfg=darkgray ctermbg=black
 hi StatusLineNC cterm=NONE
 hi VertSplit	cterm=NONE
 hi Title	ctermfg=5
-hi Visual	cterm=underline
+hi Visual	cterm=underline ctermbg=NONE
 hi VisualNOS	cterm=underline
 hi WarningMsg	ctermfg=yellow ctermbg=black
 hi WildMenu	ctermfg=0 ctermbg=3
@@ -262,10 +273,9 @@ hi htmlEndTag   ctermfg=244
 hi htmlArg              ctermfg=119 guifg=#dfafdf
 hi htmlValue  ctermfg=187  guifg=#dfdfaf
 hi htmlTitle  ctermfg=254  ctermbg=95
-" hi htmlArg  ctermfg=146
-" hi htmlTagName  ctermfg=146
-hi htmlString ctermfg=187
-
+hi htmlArg  ctermfg=203
+hi htmlTagName  ctermfg=69
+hi htmlString ctermfg=104
 
 
 " NERDTree
