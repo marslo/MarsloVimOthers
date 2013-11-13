@@ -58,6 +58,7 @@
 "       File Name: marslo16.vim
 "       Modified:
 "               Update the format
+"               Add html tag color for gui
 
 " cool help screens
 " :he group-name
@@ -135,6 +136,14 @@ hi MBEVisibleNormal     guifg=#A6DB29       guibg=#333333
 " hi MatchParen           guibg=GreenYellow   gui=underline
 hi MatchParen           gui=inverse
 
+" NERDTree
+hi Directory            guifg=#87afdf
+hi treeCWD              guifg=#dfaf87
+hi treeClosable         guifg=#df8787
+hi treeOpenable         guifg=#afdf87
+hi treePart             guifg=#808080
+hi treeDirSlash         guifg=#808080
+hi treeLink             guifg=#dfafdf
 
 
 " syntax highlighting groups
@@ -160,16 +169,19 @@ hi PreProc	            guifg=OrangeRed3    gui=NONE
 """" classname, <key>, <Groupname> color
 hi Type		            guifg=#FF801E       gui=NONE
 hi Special	 gui=NONE
+hi Underlined	        gui=NONE
+
+hi htmlArg              guifg=#dfafdf
+hi htmlValue            guifg=#dfdfaf
+
+" hi Identifier	        guifg=palegreen = #98FB98
 
 
-" hi Identifier	guifg=palegreen = #98FB98
-
-
-" hi Comment	guifg=SkyBlue
-" hi Constant	guifg=#ffa0a0
-" hi Statement	guifg=khaki
-" hi PreProc	guifg=indianred
-" hi Type		guifg=darkkhaki
+" hi Comment	        guifg=SkyBlue
+" hi Constant	        guifg=#ffa0a0
+" hi Statement	        guifg=khaki
+" hi PreProc	        guifg=indianred
+" hi Type		        guifg=darkkhaki
 "hi Error
 "hi CursorIM
 "hi Directory
@@ -261,5 +273,19 @@ hi Special 	            ctermfg=yellow
 hi Underlined	        cterm=underline     ctermfg=5
 hi Ignore	            cterm=NONE          ctermfg=7       ctermfg=darkgrey
 hi Error	            cterm=NONE          ctermfg=7       ctermbg=1
+
+
+" Set SignColumn highlight
+" :help sign
+" :help SignColumn
+
+" hi currentLine          term=reverse        cterm=reverse       gui=reverse
+" hi breakPoint           term=NONE           cterm=NONE          gui=NONE
+" hi empty                term=NONE           cterm=NONE          gui=NONE
+
+" sign define currentLine linehl=currentLine
+" sign define breakPoint  linehl=breakPoint
+" sign define both        linehl=currentLine
+" sign define empty       linehl=empty
 
 "vim: sw=4
