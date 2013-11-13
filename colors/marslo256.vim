@@ -259,12 +259,12 @@ hi Cursor               cterm=underline     term=underline
 hi MatchParen           cterm=inverse       term=inverse
 hi LineNr               ctermfg=239         ctermbg=none
 hi CursorLine           cterm=NONE
-hi CursorLineNr         ctermbg=NONE        ctermfg=118
+hi CursorLineNr         ctermbg=NONE        ctermfg=118     term=bold
 
 hi Comment	            ctermfg=239
 """" Strings
-" hi Constant	            ctermfg=brown gui=NONE
-" hi Constant	            ctermfg=darkred gui=NONE
+" hi Constant	            ctermfg=brown
+" hi Constant	            ctermfg=darkred
 hi Constant	            ctermfg=113
 """" Key words (while, if, else, for, in)
 hi Statement	        ctermfg=red
@@ -297,5 +297,18 @@ hi treeOpenable         ctermfg=150
 hi treePart             ctermfg=244
 hi treeDirSlash         ctermfg=244
 hi treeLink             ctermfg=182
+
+" Set SignColumn highlight
+" :help sign
+" :help SignColumn
+
+" hi currentLine          term=reverse        cterm=reverse       gui=reverse
+" hi breakPoint           term=NONE           cterm=NONE          gui=NONE
+" hi empty                term=NONE           cterm=NONE          gui=NONE
+
+" sign define currentLine linehl=currentLine
+" sign define breakPoint  linehl=breakPoint
+" sign define both        linehl=currentLine
+" sign define empty       linehl=empty
 
 "vim: sw=4
