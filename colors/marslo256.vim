@@ -8,12 +8,10 @@
 "       Author: Marslo
 "       Email: marslo.vida@gmail.com
 "       File Name: desert_Marslo_ForLinux
-
 " v1.1: Modified at 18/10/2012 16:49:12.92
 "       Author: Marslo
 "       Email: marslo.vida@gmail.com
 "       File Name: desert_Marslo_ForLinux_2
-"
 " v1.2: Modified at 08/11/2012 16:05:59.95
 "       Author: Marslo
 "       Email: marslo.vida@gmail.com
@@ -33,7 +31,6 @@
 "                Pmenu        guibg ctermbg
 "                PmenuSel     guifg guibg ctermbg
 "                PmenuSbar    guifg guibg
-"
 " v1.4: Modified at 31/10/13 15:47:08
 "       Author: Marslo
 "       Email:  marslo.jiao@gmail.com
@@ -74,6 +71,12 @@
 
 set background=dark
 " set background=dark
+if 256 != &t_Co && ! has("gui_running")
+    echomsg ""
+    echomsg "Error: Please use GUI or an 256-color terminal (:set t_Co=256 && export TERM='xterm-256color')"
+    echomsg ""
+endif
+
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
     " complaining
@@ -82,6 +85,7 @@ if version > 580
         syntax reset
     endif
 endif
+
 let g:colors_name="marslo256"
 
 " hi Normal	            guifg=#DDDDDD       guibg=gray20
@@ -249,26 +253,28 @@ hi DiffText	            cterm=NONE          ctermbg=1
 hi Pmenu                ctermbg=darkred
 hi PmenuSel             ctermfg=lightgreen
 " hi Identifier	        ctermfg=LightGreen
-hi Identifier	        ctermfg=149         gui=NONE
+hi Identifier	        ctermfg=149
 hi Cursor               cterm=underline     term=underline
 " hi MatchParen           ctermbg=Green
 hi MatchParen           cterm=inverse       term=inverse
-hi LineNr               ctermfg=darkgrey    ctermbg=none
-hi CursorLine           cterm=NONE          ctermbg=darkgrey    ctermfg=white
-hi CursorLineNr         ctermbg=black       ctermfg=82          term=bold
+hi LineNr               ctermfg=239         ctermbg=none
+hi CursorLine           cterm=NONE
+hi CursorLineNr         ctermbg=NONE        ctermfg=118
 
-hi Comment	            ctermfg=darkgrey
+hi Comment	            ctermfg=239
 """" Strings
 " hi Constant	            ctermfg=brown gui=NONE
 " hi Constant	            ctermfg=darkred gui=NONE
-hi Constant	            ctermfg=green
+hi Constant	            ctermfg=113
 """" Key words (while, if, else, for, in)
 hi Statement	        ctermfg=red
 """" #! color
 hi PreProc	            ctermfg=red
 """" classname, <key>, <Groupname> color
-hi Type		            ctermfg=yellow
-hi Special	            ctermfg=yellow
+" hi Type		            ctermfg=yellow
+" hi Special	            ctermfg=yellow
+hi Type		            ctermfg=221
+hi Special	            ctermfg=221
 
 hi Underlined	        cterm=underline     ctermfg=5
 hi Ignore	            cterm=NONE          ctermfg=7       ctermfg=darkgrey
@@ -282,7 +288,6 @@ hi htmlTitle            ctermfg=254         ctermbg=95
 hi htmlArg              ctermfg=203
 hi htmlTagName          ctermfg=69
 hi htmlString           ctermfg=104
-
 
 " NERDTree
 hi Directory            ctermfg=110
