@@ -243,11 +243,12 @@ hi WarningMsg	        ctermfg=yellow      ctermbg=black
 hi WildMenu	            ctermfg=0           ctermbg=3
 hi Folded	            ctermfg=darkgrey    ctermbg=NONE
 hi FoldColumn	        ctermfg=darkgrey    ctermbg=NONE
-hi DiffAdd	            ctermbg=4
-" hi DiffChange	        ctermbg=5
-hi DiffChange	        ctermbg=2
-hi DiffDelete	        cterm=NONE          ctermfg=4 ctermbg=6
-hi DiffText	            cterm=NONE          ctermbg=1
+hi DiffAdd	            cterm=NONE          ctermbg=56     ctermfg=255
+hi DiffDelete	        cterm=NONE          ctermbg=239
+hi DiffAdded            ctermbg=93
+hi DiffRemoved          ctermbg=129
+hi DiffChange	        cterm=bold          ctermbg=99      ctermfg=255
+hi DiffText	            cterm=NONE          ctermbg=196
 
 " The color setting for complete opt
 hi Pmenu                ctermbg=darkred
@@ -259,7 +260,7 @@ hi Cursor               cterm=underline     term=underline
 hi MatchParen           cterm=inverse       term=inverse
 hi LineNr               ctermfg=239         ctermbg=none
 hi CursorLine           cterm=NONE
-hi CursorLineNr         ctermbg=NONE        ctermfg=118     term=bold
+hi CursorLineNr         ctermbg=NONE        ctermfg=118         term=bold
 
 hi Comment	            ctermfg=239
 """" Strings
