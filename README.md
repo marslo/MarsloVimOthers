@@ -1,5 +1,11 @@
-Marslo.vim
+Marslo Vim Others
 ==========
+
+## The pursor is for some git plugins:
+- vimtweak
+- conquesterm
+<pre><code>:so %</code></pre>
+- ctags
 
 ## About Gvim Colors:
 - Inspired by http://vim.wikia.com/wiki/View_all_colors_available_to_gvim

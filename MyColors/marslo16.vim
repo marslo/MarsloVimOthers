@@ -191,6 +191,21 @@ hi Underlined	        gui=NONE
 hi htmlArg              guifg=#dfafdf
 hi htmlValue            guifg=#dfdfaf
 
+" For syntax-python
+" hi link Define          Entity
+" hi link Function        Entity
+" hi link Structure       Support
+" hi link Special         Support
+" hi link Test            Support
+" hi link Character       Constant
+" hi link Number          Constant
+" hi link Boolean         Constant
+" hi link Float           Number
+" hi link Conditional     Statement
+" hi link StorageClass    Statement
+" hi link Operator        Statement
+" hi link Statement       Statement
+
 " hi Identifier	        guifg=palegreen = #98FB98
 " hi Comment	        guifg=SkyBlue
 " hi Constant	        guifg=#ffa0a0
