@@ -63,7 +63,7 @@
 "       File Name: marslo256.vim
 "       Modified:
 "               Update the format
-" v1.8: Modified at 18/11/13 20:30:18
+" v1.8: Modified at 18/11/13  20:03:20
 "       Author: Marslo
 "       Email: marslo.jiao@gmail.com
 "       File Name: marslo256.vim
@@ -72,6 +72,8 @@
 "               Entity              guifg
 "               Support             guifg
 "               Type                guifg
+"               FoldColumn          guifg
+"               Directory           guifg
 
 " cool help screens
 " :he group-name
@@ -113,12 +115,9 @@ hi CursorLine           guibg=background
 hi CursorLineNr         guifg=#A6E22E       guibg=background    gui=NONE
 " hi Folded	            guibg=grey15        guifg=gold
 hi Folded	            guibg=grey15        guifg=grey60
-hi FoldColumn	        guibg=grey15        guifg=tan
+hi FoldColumn	        guibg=#181818       guifg=#484848
 " $,>,backspace,... and other sign
-" hi NonText	        guifg=LightBlue     guibg=gray30
-" hi NonText	            guifg=LightBlue     guibg=#181818
-hi NonText              guifg=#808080           gui=NONE
-" hi VertSplit	        guibg=#c2bfa5       guifg=grey50        gui=none
+hi NonText              guifg=#808080       gui=NONE
 hi VertSplit	        guibg=#282828       guifg=grey30        gui=none
 hi IncSearch	        guifg=slategrey     guibg=khaki
 hi ModeMsg	            guifg=goldenrod
@@ -160,7 +159,8 @@ hi MBEVisibleNormal     guifg=#A6DB29       guibg=#333333
 hi MatchParen           gui=inverse
 
 " NERDTree
-hi Directory            guifg=#87afdf
+" hi Directory            guifg=#87afdf
+hi Directory            guifg=#1E90FF
 hi treeCWD              guifg=#dfaf87
 hi treeClosable         guifg=#df8787
 hi treeOpenable         guifg=#afdf87
@@ -194,6 +194,7 @@ hi PreProc	            guifg=OrangeRed3    gui=NONE
 " hi Type		            guifg=#B2F432       gui=NONE
 " hi Type		            guifg=#D0E141       gui=NONE
 " hi Type		            guifg=#1E90FF       gui=NONE
+" hi Type		            guifg=#a4c148       gui=NONE
 hi Type		            guifg=#6495ED       gui=NONE
 hi Underlined	        gui=NONE
 
@@ -244,15 +245,15 @@ hi htmlValue            guifg=#dfdfaf
 "    3	    6	    DarkCyan
 "    4	    1	    DarkRed
 "    5	    5	    DarkMagenta
-"    6	    3	    Brown, DarkYellow
-"    7	    7	    LightGray, LightGrey, Gray, Grey
-"    8	    0*	    DarkGray, DarkGrey
-"    9	    4*	    Blue, LightBlue
-"    10	    2*	    Green, LightGreen
-"    11	    6*	    Cyan, LightCyan
-"    12	    1*	    Red, LightRed
-"    13	    5*	    Magenta, LightMagenta
-"    14	    3*	    Yellow, LightYellow
+"    6	    3	    Brown,          DarkYellow
+"    7	    7	    LightGray,      LightGrey,      Gray,       Grey
+"    8	    0*	    DarkGray,       DarkGrey
+"    9	    4*	    Blue,           LightBlue
+"    10	    2*	    Green,          LightGreen (#90EE90)
+"    11	    6*	    Cyan,           LightCyan
+"    12	    1*	    Red,            LightRed
+"    13	    5*	    Magenta,        LightMagenta
+"    14	    3*	    Yellow,         LightYellow (#FFFFE0)
 "    15	    7*	    White
 
 hi SpecialKey	        ctermfg=darkgreen
@@ -315,11 +316,11 @@ hi htmlTag              ctermfg=244
 hi htmlEndTag           ctermfg=244
 hi htmlArg              ctermfg=119
 hi htmlValue            ctermfg=187
-hi htmlTitle            ctermfg=254         ctermbg=95
+hi htmlTitle            ctermfg=184         ctermbg=NONE
 hi htmlArg              ctermfg=203
 hi htmlTagName          ctermfg=69
-hi htmlString           ctermfg=104
-
+" hi htmlString           ctermfg=104
+hi htmlString           ctermfg=113
 " NERDTree
 hi Directory            ctermfg=110
 hi treeCWD              ctermfg=180
